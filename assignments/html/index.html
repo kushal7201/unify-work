@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta description="this is an HTML for practice">
+    <title>HTML Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <div>
+            <form id="userForm">
+                <p class="form-heading">Basic Form</p>
+                <!-- Name -->
+                <label>Name</label>
+                <input type="text" id="name" required>
+
+                <!-- Age -->
+                <label>Age</label>
+                <input type="number" id="age" required>
+
+                <!-- Gender -->
+                <label>Gender</label>
+                <input type="radio" name="gender" value="Male" class="inline"> Male
+                <input type="radio" name="gender" value="Female" class="inline"> Female
+                <input type="radio" name="gender" value="Other" class="inline"> Other
+
+                <!-- Country -->
+                <label>Country</label>
+                <select id="country" required>
+                    <option value="">Select Country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Japan</option>
+                    <option>China</option>
+                </select>
+
+                <!-- Tech Stack -->
+                <label>Technological Stack</label>
+                <input type="checkbox" value="HTML" class="inline tech"> HTML
+                <input type="checkbox" value="CSS" class="inline tech"> CSS
+                <input type="checkbox" value="JS" class="inline tech"> JS
+                <input type="checkbox" value="React" class="inline tech"> React
+                <input type="checkbox" value="React Native" class="inline tech"> React Native
+
+                <!-- Address -->
+                <label>Address</label>
+                <textarea id="address" rows="3" required></textarea>
+
+                <!-- Telephone -->
+                <label>Telephone</label>
+                <input type="tel" id="telephone" pattern="[0-9]{10}" required placeholder="10 digit number">
+
+                <!-- Email -->
+                <label>Email</label>
+                <input type="email" id="email" required>
+
+                <!-- Buttons -->
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Result Table -->
+            <div id="result"></div>
+        </div>
+
+    </main>
+    <footer>
+        <!-- this is the footer -->
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
