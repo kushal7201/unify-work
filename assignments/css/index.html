@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Info — Responsive Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="shell" role="main">
+      <div class="form-wrap">
+        <h1>Personal Info</h1>
+        <p class="lead">Update your personal details here</p>
+
+        <form id="personalForm" autocomplete="on">
+
+          <label class="field">
+            <span class="muted">Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label class="field">
+            <span class="muted">Email Address</span>
+            <input type="email" name="email" placeholder="Your email address" required />
+          </label>
+
+          <div class="two-col">
+            <label class="field">
+              <span class="muted">Age</span>
+              <input type="number" name="age" placeholder="Your age" min="0" max="120" required />
+            </label>
+            <label class="field">
+              <span class="muted">Phone no.</span>
+              <input name="phone" type="tel" id="telephone" pattern="[0-9]{10}" required placeholder="10 digit number"/>
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="muted">Country</span>
+            <select name="country" aria-label="Country" required>
+              <option value="" disabled selected hidden>Your country</option>
+              <option>India</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>Canada</option>
+              <option>Australia</option>
+            </select>
+          </label>
+
+          <div>
+            <div class="muted" style="margin-bottom:12px">Gender</div>
+            <div class="gender-group">
+              <label class="gender-option">
+                <span>Male</span>
+                <input type="radio" name="gender" value="male" required />
+              </label>
+              <label class="gender-option">
+                <span>Female</span>
+                <input type="radio" name="gender" value="female" />
+              </label>
+              <label class="gender-option">
+                <span>Other</span>
+                <input type="radio" name="gender" value="other" />
+              </label>
+            </div>
+          </div>
+
+          <label class="field">
+            <span class="muted">Tech Stack</span>
+            <select name="tech" aria-label="Tech stack" required>
+              <option value="" disabled selected hidden>Your tech stack</option>
+              <option>Frontend: React</option>
+              <option>Backend: Node.js</option>
+              <option>Fullstack: MERN</option>
+              <option>Mobile: React Native</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="muted">Address</span>
+            <textarea name="address" placeholder="Your address" required></textarea>
+          </label>
+
+          <div class="actions">
+            <button type="button" class="btn reset" id="resetBtn">Reset</button>
+            <button type="submit" class="btn submit">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
