@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar-left{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 16rem;
+    border-right: 1px solid #e5e7eb;
+    overflow: auto;
+}
+
+.sidebar-left-itemset1{
+    padding-bottom: 1rem;
+}
+
+.left-item1{
+    height: 3rem;
+    border-radius: 0.25rem;
+    background-color: rgb(23,23,23);
+}
+
+.sidebar-left-itemset2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.left-item{
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    background-color: rgb(245 245 245);
+}
+
+.left-item:first-child{
+    background-color: rgb(229,229,229);
+}
+
+.left-item:nth-child(5){
+    height: 1px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: rgb(229,229,229);
+}
+
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    height: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-item{
+    height: 2rem;
+    background-color: rgb(229,229,229);
+    border-radius: 0.25rem;
+    flex-shrink: 0;
+}
+
+.nav-item:nth-child(1){
+    width: 2rem;
+}
+
+.nav-item:nth-child(2){
+    width: 2rem;
+}
+
+.nav-item:nth-child(3){
+    flex-grow: 1;
+    background: none;
+}
+
+.nav-item:nth-child(4){
+    width: 16rem;
+    background-color: rgb(245 245 245);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.content-item{
+    display: flex;
+    gap: 0.75rem;
+    height: 3rem;
+    border-bottom: 1px solid rgb(229,229,229);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    align-items: center;
+}
+
+.content-item-box{
+    height: 1rem;
+    border-radius: 0.25rem;
+}
+
+.content-item-box:nth-child(1){
+    width: 1.25rem;
+    flex-shrink: 0;
+    background-color: rgb(229,229,229);
+}
+
+.content-item-box:nth-child(2){
+    width: 1.25rem;
+    flex-shrink: 0;
+    background-color: rgb(229,229,229);
+}
+
+.content-item-box:nth-child(3){
+    width: 8rem;
+    flex-shrink: 0;
+    background-color: rgb(229,229,229);
+}
+
+.content-item-box:nth-child(4){
+    flex-grow: 1;
+    background-color: rgb(245 245 245);
+}
+
+.content-item-box:nth-child(5){
+    width: 4rem;
+    flex-shrink: 0;
+    background-color: rgb(245 245 245);
+}
+
