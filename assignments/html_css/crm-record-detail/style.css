@@ -1,6 +1,13 @@
-/* simple reset */
-* { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
 
 .app {
   min-height: 100vh;
@@ -9,7 +16,6 @@ html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, "Se
   background: #ffffff;
 }
 
-/* HEADER (h-14 style) */
 .header {
   height: 56px;
   display: flex;
@@ -20,18 +26,18 @@ html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, "Se
   gap: 16px;
 }
 
-/* left side of header */
 .header-left {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .logo-square {
   width: 32px;
   height: 32px;
-  background: #e5e7eb; /* neutral-200 */
   border-radius: 8px;
 }
+
 .header-title {
   width: 192px;
   height: 24px;
@@ -39,46 +45,66 @@ html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, "Se
   border-radius: 6px;
 }
 
-/* right side header actions */
-.header-right { display:flex; gap:12px; align-items:center; }
+.header-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .header-action {
   width: 128px;
   height: 32px;
-  background: #f5f5f5; /* neutral-100 */
-  border-radius: 8px;
-}
-.header-cta {
-  width: 128px;
-  height: 32px;
-  background: #111827; /* neutral-900 */
   border-radius: 8px;
 }
 
-/* profile strip (bg-neutral-100 with border-bottom) */
+.header-cta {
+  width: 128px;
+  height: 32px;
+  border-radius: 8px;
+}
+
 .profile-strip {
   display: flex;
   gap: 16px;
   padding: 24px;
   align-items: center;
-  background: #f3f4f6; /* neutral-100 */
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* avatar */
 .avatar-circle {
-  width: 80px;  /* h-20 w-20 */
   height: 80px;
+  width: 80px;
+  background-color: #d1d5db;
   border-radius: 9999px;
-  background: #d1d5db; /* neutral-300 */
 }
 
-/* profile info area */
-.profile-info { flex: 1; display:flex; flex-direction:column; gap:8px; }
-.profile-name { width: 256px; height: 32px; background:#d1d5db; border-radius:8px; }
-.profile-sub  { width: 384px; height: 20px; background:#e5e7eb; border-radius:6px; }
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-/* action buttons under profile */
-.profile-actions { display:flex; gap:12px; margin-top:8px; }
+.profile-name {
+  width: 256px;
+  height: 32px;
+  background: #d1d5db;
+  border-radius: 8px;
+}
+
+.profile-sub {
+  width: 384px;
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
 .btn-outline {
   width: 112px;
   height: 32px;
@@ -87,84 +113,119 @@ html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, "Se
   border-radius: 8px;
 }
 
-/* body wrap holds main content and rightbar */
 .body-wrap {
   display: flex;
   flex: 1;
-  min-height: 0; /* allows children to scroll properly */
 }
 
-/* main content area */
 .content {
   flex: 1;
-  display:flex;
+  display: flex;
   flex-direction: column;
   min-width: 0;
 }
 
-/* tabs row (h-12) */
 .tabs {
   height: 48px;
   border-bottom: 1px solid #e5e7eb;
-  display:flex;
-  align-items:center;
-  gap:16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
   padding: 0 24px;
 }
-.tab-active { width: 64px; height: 20px; background: #111827; border-radius: 6px; }
-.tab { width: 64px; height: 20px; background: #e5e7eb; border-radius: 6px; }
 
-/* content area with two-column grid */
-.content-area { flex: 1; overflow:auto; padding: 24px; background: #ffffff; }
+.tab-active {
+  width: 64px;
+  height: 20px;
+  background: #111827;
+  border-radius: 6px;
+}
 
-/* two-col layout inside main content */
+.tab {
+  width: 64px;
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+.content-area {
+  flex: 1;
+  overflow: auto;
+  padding: 24px;
+  background: #ffffff;
+}
+
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
 
-/* each column */
-.col { display:flex; flex-direction: column; gap: 16px; }
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-/* section title skeleton */
-.section-title { width: 200px; height: 24px; background: #e5e7eb; border-radius: 8px; }
+.section-title {
+  width: 200px;
+  height: 24px;
+  background: #e5e7eb;
+  border-radius: 8px;
+}
 
-/* list rows */
-.list { background: transparent; border-radius: 6px; overflow: hidden; }
+.list {
+  background: transparent;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
 .list-row {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   padding: 12px 0;
   border-bottom: 1px solid #f3f4f6;
 }
-.row-key { width: 120px; height: 16px; background: #e5e7eb; border-radius: 6px; }
-.row-value { width: 180px; height: 12px; background: #f3f4f6; border-radius: 6px; }
 
-/* right sidebar (w-80) */
+.row-key {
+  width: 120px;
+  height: 16px;
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+.row-value {
+  width: 180px;
+  height: 12px;
+  background: #f3f4f6;
+  border-radius: 6px;
+}
+
 .rightbar {
-  width: 320px; /* equivalent to w-80 (20rem) */
   border-left: 1px solid #e5e7eb;
   padding: 16px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   gap: 12px;
   background: #ffffff;
 }
 
-/* rightbar title */
-.right-title { width: 120px; height: 20px; background: #e5e7eb; border-radius:8px; }
-
-/* small card in rightbar */
-.card {
-  display:flex;
-  gap:12px;
-  padding:12px;
-  background: #f9fafb; /* neutral-50 */
-  border-radius: 12px;
-  align-items:center;
+.right-title {
+  width: 120px;
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 8px;
 }
+
+.card {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  align-items: center;
+}
+
 .card-avatar {
   width: 40px;
   height: 40px;
@@ -172,13 +233,38 @@ html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, "Se
   background: #e5e7eb;
   flex-shrink: 0;
 }
-.card-body { flex: 1; display:flex; flex-direction: column; gap:6px; }
-.card-line { height: 16px; width:100%; background:#e5e7eb; border-radius:6px; }
-.card-sub  { height: 12px; width: 80px; background:#f3f4f6; border-radius:6px; }
 
-/* responsiveness */
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-line {
+  height: 16px;
+  width: 100%;
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+.card-sub {
+  height: 12px;
+  width: 80px;
+  background: #f3f4f6;
+  border-radius: 6px;
+}
+
 @media (max-width: 900px) {
-  .two-col { grid-template-columns: 1fr; }
-  .rightbar { width: 260px; }
-  .profile-name { width: 200px; }
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .rightbar {
+    width: 260px;
+  }
+
+  .profile-name {
+    width: 200px;
+  }
 }
