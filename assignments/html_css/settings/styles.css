@@ -1,0 +1,188 @@
+html,
+body {
+    width: 99.7%;
+    height: 99.7%;
+    margin: 0;
+    padding: 0;
+}
+
+.settings {
+    display: flex;
+    height: 100%;
+    border: 2px solid grey;
+}
+
+.settings-nav {
+    flex: 1;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-header {
+    height: 60px;
+    margin: 20px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-header-chip {
+    width: 85%;
+    height: 40%;
+    background-color: grey;
+}
+
+.nav-list {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+
+.nav-item:hover {
+    background-color: rgb(243, 241, 240);
+}
+
+.nav-item-label {
+    width: 50%;
+    height: 30%;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(238, 235, 230);
+}
+
+.nav-item.is-active {
+    background-color: rgb(181, 180, 180);
+}
+
+.nav-item.is-active .nav-item-label {
+    background-color: rgb(88, 88, 88);
+}
+
+.settings-main {
+    flex: 6;
+}
+
+.settings-header {
+    height: 80px;
+    border-bottom: 2px solid grey;
+    display: flex;
+    align-items: center;
+}
+
+.settings-title {
+    width: 120px;
+    height: 30%;
+    background-color: grey;
+    margin-left: 20px;
+}
+
+.settings-content {
+    height: 1100px;
+    width: 60%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-card {
+    height: 200px;
+    margin: 20px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body {
+    flex: 1;
+    margin: 20px;
+}
+
+.card-title {
+    width: 40%;
+    height: 15%;
+    background-color: grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card-group {
+    height: 30%;
+    margin: 10px 0;
+}
+
+.card-field-sm {
+    width: 30%;
+    height: 25%;
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.card-field-md {
+    width: 50%;
+    height: 20%;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.card-actions {
+    flex: 1;
+    margin: 20px;
+}
+
+.action-pill {
+    width: 90px;
+    height: 25px;
+    background-color: grey;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.card-toggles {
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.toggle {
+    width: 90px;
+    height: 25px;
+    background-color: grey;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.toggle.is-on {
+    background-color: black;
+}
+
+.settings-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.footer-btn {
+    width: 90px;
+    height: 35px;
+    background-color: lightgrey;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.footer-btn.primary {
+    background-color: black;
+}

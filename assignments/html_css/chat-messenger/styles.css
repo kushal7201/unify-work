@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  background: #fff;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 260px;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  height: 56px;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 12px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.chat-list {
+  overflow-y: auto;
+}
+
+.chat-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.chat-item:hover {
+  background: #fafafa;
+}
+
+.chat-item.active {
+  background: #f3f3f3;
+}
+
+.chat-meta {
+  flex: 1;
+}
+
+.chat-title {
+  height: 14px;
+  width: 90px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.chat-preview {
+  height: 10px;
+  width: 100%;
+  background: #eee;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  height: 56px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
+}
+
+.chat-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  height: 14px;
+  width: 120px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.user-status {
+  height: 10px;
+  width: 60px;
+  background: #eee;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.chat-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.message.outgoing {
+  justify-content: flex-end;
+}
+
+.bubble {
+  height: 36px;
+  border-radius: 16px;
+}
+
+.bubble.light {
+  background: #f3f3f3;
+  width: 220px;
+}
+
+.bubble.dark {
+  background: #111;
+  width: 180px;
+}
+
+.bubble.medium {
+  width: 200px;
+}
+
+.bubble.wide {
+  width: 260px;
+}
+
+/* Input */
+
+.input-bar {
+  height: 72px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.input {
+  flex: 1;
+  height: 44px;
+  background: #f3f3f3;
+  border-radius: 22px;
+}
+
+/* Common */
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.avatar.small {
+  width: 32px;
+  height: 32px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background: #eee;
+  border-radius: 6px;
+}
+
+.icon.round {
+  border-radius: 50%;
+}
+
+.icon.dark {
+  background: #111;
+}
+
+.icon.square {
+  border-radius: 8px;
+}

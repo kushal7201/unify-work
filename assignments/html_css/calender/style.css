@@ -1,0 +1,258 @@
+html, body {
+    width: 99.7%;
+    height: 99.7%;
+    padding: 0;
+    margin: 0;
+}
+
+/* body{
+    border: 5px solid red;
+} */
+
+/* Global Styling */
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.outer-main-div{
+    display: flex;
+    height: 100%;
+}
+
+.left, .right{
+    border: 2px solid grey;
+    height: 100%;
+}
+
+.left{
+    flex: 1;
+}
+
+.left-up{
+    height: 350px;
+    /* border-bottom: 1px solid grey; */
+}
+
+.left-up-1, .left-up-2{
+    /* border: 1px solid grey; */
+    margin-left: 10px;
+}
+
+.left-up-1{
+    width: 125px;
+    height: 40px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.left-up-2{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: calc(100% - 105px);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 4px;
+    border: none;
+}
+
+.left-up-2 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+
+.left-down{
+    height: 250px;
+    margin: 10px;
+    border-top: 1px solid grey;
+}
+
+.left-down-1, .left-down-2{
+    
+    border-radius: 4px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.left-down-1{
+    border: 1px solid grey;
+    background-color: grey;
+    width: 30%;
+}
+
+.left-down-2{
+    border: 1px solid red;
+    margin-top: 10px;
+    border: none;
+}
+
+.left-down-2-1{
+    border: 1px solid grey;
+    background-color: grey;
+    width: 10px;
+    margin-right: 5px;
+}
+
+.left-down-2-2{
+    border: 1px solid lightgrey;
+    background-color: lightgray;
+    width: 100px;
+    /* height: 50px; */
+}
+
+.right{
+    flex: 6;
+}
+
+
+.right-nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inside-right-nav-up, .inside-right-nav-down{
+    /* border: 1px solid ; */
+    flex: 1;
+}
+
+.inside-right-nav-up{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inside-right-nav-up-1, .inside-right-nav-up-2, .inside-right-nav-up-3{
+    /* border: 1px solid crimson; */
+    background-color: lightgrey;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.inside-right-nav-up-1, .inside-right-nav-up-2{
+    width: 40px;
+}
+
+.inside-right-nav-up-3{
+    height: 25px;
+    width: 150px;
+}
+
+.inside-right-nav-down{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.inside-right-nav-down-1{
+    /* border: 1px solid lightgrey; */
+    width: 250px;
+    height: 45px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inside-right-nav-down-1-1{
+    /* border: 1px solid lightgrey; */
+    width: 40%;
+    height: 80%;
+    margin-left: 5px;
+}
+
+
+.right-body{
+    height: calc(100% - 80px);
+    display: flex;
+}
+
+.right-left{
+    flex: 1;
+    border: 1px solid lightgrey;
+}
+
+.inside-right-left{
+    height: 95px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+    padding-top: 3px;
+}
+
+.right-right{
+    flex: 15;
+    border: 1px solid lightgrey;
+    display: flex;
+}
+
+.inside-right-right{
+    flex: 1;
+    border-right: 1px solid lightgrey;
+}
+
+.inside-right-right-1{
+    height: 70px;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-right-right-1-1{
+    margin-bottom: 5px;
+}
+
+.inside-right-right-1-2{
+    /* border: 1px solid red; */
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.inside-right-right-1_2{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    margin-top: 50px;
+    height: 80px;
+    /* margin-top: ; */
+    /* margin-bottom: ; */
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 6px;
+}
+
+.inside-right-right-1_3{
+    border: 1px solid lightgrey;
+    margin-top: 130px;
+    height: 50px;
+    /* margin-top: ; */
+    /* margin-bottom: ; */
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 6px;
+}
+
+.inside-right-right-1_4{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    margin-top: 30px;
+    height: 120px;
+    /* margin-top: ; */
+    /* margin-bottom: ; */
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 6px;
+}

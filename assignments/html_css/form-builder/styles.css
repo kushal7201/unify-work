@@ -1,0 +1,216 @@
+html,
+body {
+    width: 99.7%;
+    height: 99.7%;
+    margin: 0;
+    padding: 0;
+}
+
+.dark {
+    background-color: black !important;
+}
+
+.is-selected {
+    border: 2px solid black !important;
+}
+
+.builder {
+    display: flex;
+    height: 100%;
+    border: 1px solid grey;
+}
+
+.panel {
+    border: 1px solid grey;
+}
+
+.panel-left,
+.panel-right {
+    flex: 1;
+}
+
+.panel-center {
+    flex: 4;
+}
+
+.panel-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.panel-header-chip {
+    height: 40%;
+    width: 30%;
+    margin-left: 10px;
+    background-color: grey;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.panel-body {
+    height: 1125px;
+}
+
+.panel-title {
+    height: 40px;
+    margin: 20px 10px 30px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.block-list {
+    height: 1000px;
+}
+
+.block-item {
+    height: 70px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.block-row {
+    display: flex;
+    margin: 0 10px;
+}
+
+.block-chip {
+    flex: 1;
+    height: 15px;
+    background-color: grey;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.block-bar {
+    flex: 10;
+    height: 15px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.block-footer {
+    width: 70%;
+    height: 15px;
+    background-color: grey;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.center-toolbar {
+    height: 60px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbar-btn {
+    height: 70%;
+    width: 40px;
+    margin: 8px;
+    background-color: grey;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.canvas {
+    height: calc(100% - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card {
+    width: 45%;
+    height: 30%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-title {
+    width: 60%;
+    height: 20px;
+    margin-left: 30px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.form-field {
+    width: 89%;
+    height: 50px;
+    margin-left: 30px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.form-actions {
+    width: 89%;
+    height: 40px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-action {
+    flex: 1;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.form-action:first-child {
+    margin-right: 10px;
+}
+
+.property {
+    height: 80px;
+    margin: 10px;
+}
+
+.property-label {
+    width: 30%;
+    height: 20px;
+    background-color: grey;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.property-input {
+    height: 40px;
+    background-color: grey;
+    border-radius: 4px;
+}
+
+.property-group {
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.property-pair {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.property-chip {
+    width: 90px;
+    height: 70%;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.property-pill {
+    width: 40px;
+    background-color: grey;
+    border-radius: 12px;
+}
