@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.header-1 {
+    width: 100%;
+    background: white;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-inner {
+    width: 98%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    width: 90px;
+    height: 20px;
+    background: #111;
+    border-radius: 4px;
+}
+
+.header-center {
+    width: 35%;
+    height: 36px;
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+
+.header-right {
+    display: flex;
+    gap: 12px;
+}
+
+.header-right span {
+    width: 28px;
+    height: 28px;
+    background: #ddd;
+    border-radius: 4px;
+}
+
+.header-right .user-circle {
+    border-radius: 50%;
+}
+
+.main-container {
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    padding: 15px 10px;
+    gap: 20px;
+}
+
+.left-1 {
+    flex: 3;
+}
+
+.right-1 {
+    flex: 1;
+}
+
+.left-1-1 {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #1a1a1a;
+    border-radius: 12px;
+}
+
+.left-1-2 {
+    height: 22px;
+    width: 60%;
+    background: #e0e0e0;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.left-1-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.left-1-3-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-icon {
+    width: 36px;
+    height: 36px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+.user-text {
+    width: 80px;
+    height: 12px;
+    background: #eeeeee;
+}
+
+.sub-rect {
+    width: 85px;
+    height: 34px;
+    background: #111;
+    border-radius: 20px;
+}
+
+.left-1-3-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.pill {
+    width: 65px;
+    height: 34px;
+    background: #eeeeee;
+    border-radius: 20px;
+}
+
+.left-1-4 {
+    background: #eeeeee;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.text-bar {
+    height: 10px;
+    background: #e0e0e0;
+    margin-bottom: 8px;
+    border-radius: 3px;
+}
+
+.text-bar:last-child {
+    width: 70%;
+    margin-bottom: 0;
+}
+
+.right-1-1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.right-thumb {
+    flex: 0 0 160px;
+    aspect-ratio: 16 / 9;
+    background: #ddd;
+    border-radius: 8px;
+}
+
+.right-text-group {
+    flex: 1;
+}
+
+.right-text-1 {
+    height: 14px;
+    width: 100%;
+    background: #e0e0e0;
+    margin-bottom: 6px;
+}
+
+.right-text-2 {
+    height: 12px;
+    width: 50%;
+    background: #eeeeee;
+}
