@@ -9,6 +9,7 @@ interface ChatWindowProps {
   newMessage: string;
   onMessageChange: (message: string) => void;
   onSendMessage: () => void;
+  onBack?: () => void;
 }
 
 export default function ChatWindow({
@@ -16,6 +17,7 @@ export default function ChatWindow({
   newMessage,
   onMessageChange,
   onSendMessage,
+  onBack,
 }: ChatWindowProps) {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -47,9 +49,20 @@ export default function ChatWindow({
   };
 
   return (
-    <div className="flex-1 flex flex-col bg-[#efeae2]">
+    <div className="flex-1 flex flex-col bg-[#efeae2] w-full">
       {/* Chat Header */}
       <div className="bg-[#f0f2f5] px-4 py-2.5 flex items-center gap-3 border-b border-gray-200">
+        {/* Back button for mobile */}
+        {onBack && (
+          <button
+            onClick={onBack}
+            className="md:hidden text-gray-600 hover:text-gray-900 mr-2"
+          >
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+            </svg>
+          </button>
+        )}
         <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-xl">
           {chat.avatar}
         </div>
@@ -61,7 +74,7 @@ export default function ChatWindow({
 
       {/* Messages */}
       <div
-        className="flex-1 overflow-y-auto px-16 py-4"
+        className="flex-1 overflow-y-auto px-4 md:px-16 py-4"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 20 0 L 0 0 0 20' fill='none' stroke='%23d9dbd5' stroke-width='0.5' opacity='0.1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grid)'/%3E%3C/svg%3E")`,
         }}
@@ -75,7 +88,7 @@ export default function ChatWindow({
               }`}
             >
               <div
-                className={`max-w-[65%] rounded-lg px-3 py-2 shadow-sm ${
+                className={`max-w-[85%] md:max-w-[65%] rounded-lg px-3 py-2 shadow-sm ${
                   message.sender === 'me'
                     ? 'bg-[#d9fdd3]'
                     : 'bg-white'

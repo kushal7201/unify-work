@@ -27,7 +27,7 @@ export default function Sidebar({
   const [currentView, setCurrentView] = useState<ViewType>('chats');
 
   return (
-    <div className="w-[400px] bg-white border-r border-gray-200 flex flex-col">
+    <div className="w-full h-full bg-white border-r border-gray-200 flex flex-col">
       {/* Header */}
       <div className="bg-[#f0f2f5] px-4 py-3 flex items-center justify-between">
         {currentView === 'profile' || currentView === 'settings' ? (

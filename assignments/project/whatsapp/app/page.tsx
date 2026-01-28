@@ -110,19 +110,27 @@ export default function Home() {
 
   return (
     <div className="flex h-screen bg-gray-100">
-      <Sidebar
-        chats={filteredChats}
-        selectedChatId={selectedChatId}
-        onSelectChat={setSelectedChatId}
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-      />
-      <ChatWindow
-        chat={selectedChat}
-        newMessage={newMessage}
-        onMessageChange={setNewMessage}
-        onSendMessage={handleSendMessage}
-      />
+      {/* Sidebar - hidden on mobile when chat is selected */}
+      <div className={`${selectedChatId ? 'hidden md:flex' : 'flex'} w-full md:w-[400px]`}>
+        <Sidebar
+          chats={filteredChats}
+          selectedChatId={selectedChatId}
+          onSelectChat={setSelectedChatId}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+        />
+      </div>
+      
+      {/* Chat Window - hidden on mobile when no chat selected */}
+      <div className={`${!selectedChatId ? 'hidden md:flex' : 'flex'} flex-1`}>
+        <ChatWindow
+          chat={selectedChat}
+          newMessage={newMessage}
+          onMessageChange={setNewMessage}
+          onSendMessage={handleSendMessage}
+          onBack={() => setSelectedChatId(null)}
+        />
+      </div>
     </div>
   );
 }
